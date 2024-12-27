@@ -5,12 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-<div class="container text-center">
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Mon premier projet avec Bootstrap en local !</p>
+<body class="bg-dark-white">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top neon-contour">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            <img src="../img/Gw.png" alt="Goharik Logo" style="width:40px;" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Projets</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="projets/projet1.html">Projet1</a></li>
+                        <li><a class="dropdown-item" href="projets/projet2.html">Projet2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="d-flex justify-content-center align-items-center vh-100 position-relative">
+    <img src="../img/jupiter.png" alt="jupiter" class="planet">
+    <img src="../img/mars.png" alt="mars" class="planet">
+    <img src="../img/mercury.png" alt="mercury" class="planet">
+    <img src="../img/planet.png" alt="planet" class="planet">
+    <img src="../img/planet-earth.png" alt="earth" class="planet">
+    <img src="../img/saturn.png" alt="saturn" class="planet">
+    <img src="../img/uranus.png" alt="uranus" class="planet">
+    <div class="text-center" style="margin-top: 5rem;">
+        <h1>Goharik GYURJYAN</h1>
+        <h4>Portfolio de réalisations</h4>
+    </div>
+</div>
+
+<div class="d-flex container-fluid flex-row mt-5">
+    <div class="w-50 text-center m-5">
+        <h2 class="mb-3">À propos de moi</h2>
+        <p class="text-justify">
+            Je m'appelle Goharik GYURJYAN, originaire d'Arménie. Baignée dans un mélange de cultures depuis mon enfance, je suis toujours en quête de nouvelles aventures, que ce soit dans ma vie personnelle ou dans le domaine de l'informatique.
+            Actuellement en deuxième année de BUT Informatique, j'ai pu réaliser de nombreux projets en équipe, disponibles sur ma page github.
+            J'ai pu au cours de ces deux dernières années développer un bagage de compétences, allant du développement web, à la gestion de base de données, en passant par la gestion de projet.
+            Je cherche constamment à m'améliorer et à apprendre de nouvelles choses, c'est pour cela qu'un domaine aussi changeant que l'informatique me correspond autant !
+        </p>
+    </div>
+    <div class="w-50 justify-content-center text-center">
+        <img src="../img/moi.png" alt="Goharik" style="width: auto; height: 50%;">
+        <h2 class="mb-3 mt-3">Mon parcours</h2>
+        <p class="text-justify">non</p>
+    </div>
 </div>
 <script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/planet.js"></script>
 </body>
+
+<footer class="neon-contour">
+    <a href="https://www.flaticon.com/free-icons/planet" title="planet icons" class="text-white">Planet icons created by Freepik - Flaticon</a>
+</footer>
 </html>

@@ -1,0 +1,33 @@
+.bg-dark-white {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.neon-contour {
+    border: 2px solid white;
+    padding: 20px;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+    border-radius: 10px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.position-relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.planet {
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.planet:hover {
+    transform: scale(1.2);
+}
