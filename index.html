@@ -12,7 +12,7 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top neon-contour">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img src="assets/img/Gw.png" alt="Goharik Logo" style="width:40px;" class="rounded-pill">
+            <img src="assets/img/Gw.png" alt="Goharik Logo" class="rounded-pill">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -35,33 +35,33 @@
 </nav>
 
 <div class="d-flex justify-content-center align-items-center vh-100 position-relative">
-    <div class="float">
-        <img src="assets/img/jupiter.png" alt="jupiter" class="planet" data-title="Mon cv">
-    </div>
-    <div class="float">
-        <img src="assets/img/mars.png" alt="mars" class="planet">
-    </div>
-    <div class="float">
-        <img src="assets/img/mercury.png" alt="mercury" class="planet">
-    </div>
-    <div class="float">
-        <img src="assets/img/planet.png" alt="planet" class="planet">
-    </div>
-    <div class="float">
-        <img src="assets/img/planet-earth.png" alt="earth" class="planet">
-    </div>
-    <div class="float">
-        <img src="assets/img/saturn.png" alt="saturn" class="planet">
-    </div>
-    <div class="float">
-        <img src="assets/img/uranus.png" alt="uranus" class="planet">
-    </div>
-    <div class="text-center" style="margin-top: 5rem;">
+    <a href="#CV" class="float">
+        <img src="assets/img/jupiter.png" alt="jupiter" class="planet" data-title="Mon Cv">
+    </a>
+    <a href="https://github.com/goharikgyurjyan" target="_blank" class="float">
+        <img src="assets/img/mars.png" alt="mars" class="planet" data-title="Mon GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/goharikgy/" target="_blank" class="float">
+        <img src="assets/img/mercury.png" alt="mercury" class="planet" data-title="Mon LinkedIn">
+    </a>
+    <a href="#projets" class="float">
+        <img src="assets/img/planet.png" alt="planet" class="planet" data-title="Mes projets">
+    </a>
+    <a href="html/contact.html" target="_blank" class="float">
+        <img src="assets/img/planet-earth.png" alt="earth" class="planet" data-title="Me contacter">
+    </a>
+    <a href="#about" class="float">
+        <img src="assets/img/saturn.png" alt="saturn" class="planet" data-title="À propos">
+    </a>
+    <a href="#formations" class="float">
+        <img src="assets/img/uranus.png" alt="uranus" class="planet" data-title="Mes formations">
+    </a>
+    <div class="text-center welcomeText">
         <h1>Goharik GYURJYAN</h1>
         <h4>Étudiante en BUT Informatique</h4>
     </div>
 </div>
-<h1 class="mb-3 text-center">À propos de moi</h1>
+<h1 class="mb-3 text-center" id="about">À propos de moi</h1>
 <div class="d-flex container-fluid flex-row mt-5">
     <div class="w-50 text-center m-5 padding-bottom">
         <h2 class="mb-3">Qui-suis je ?</h2>
@@ -73,11 +73,11 @@
             J'ai pu au cours de ces deux dernières années développer un bagage de compétences, allant du développement web, à la gestion de base de données, en passant par la gestion de projet.
 
         </p>
-        <img src="assets/img/fly.png" alt="Chemin" style="width: auto; height: 60%;">
+        <img src="assets/img/fly.png" alt="Chemin">
 
     </div>
     <div class="w-50 text-center m-5 padding-bottom">
-        <img src="assets/img/moi.png" class="justify-content-center" alt="Goharik" style="width: auto; height: 40%;">
+        <img src="assets/img/moi.png" class="justify-content-center goharikPicture" alt="Goharik">
         <h2 class="mb-3">Et après ?</h2>
         <p class="text-justify">
             À l'issue de mes études, je souhaiterais approfondir mes compétences dans des domaines qui me passionnent, comme la gestion de bases de données et la data science.
@@ -87,9 +87,10 @@
             Pour cela, je prévois de poursuivre mes études après le BUT, en intégrant soit un master spécialisé dans les bases de données et la big data, soit une école d'ingénieur offrant une formation équivalente en apprentissages.</p>
     </div>
 </div>
-<h1 class="mb-3 text-center">Mes formations</h1>
+<h1 class="mb-3 text-center" id="formations">Mes Formations</h1>
+<h1 class="mb-3 text-center" id="projets">Mes Projets</h1>
 <div class="m-5 text-center">
-    <h2 class="mb-3 mt-5">Mon CV</h2>
+    <h2 class="mb-3 mt-5" id="CV">Mon CV</h2>
     <a href="assets/pdf/CV_GOHARIK.pdf" download class="btn btn-warning d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download me-2" viewBox="0 0 16 16">
             <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
@@ -99,7 +100,7 @@
     </a>
 </div>
 <script src="js/bootstrap.bundle.js"></script>
-<script src="js/planet.js"></script>
+<script src="js/listeners.js"></script>
 </body>
 
 <footer class="neon-contour bg-dark">

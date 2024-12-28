@@ -71,7 +71,8 @@ body {
     display: none;
     pointer-events: none;
     z-index: 1000;
-    transform: translate(-50%, -120%);
+    transform: translate(-50%, 10px);
+    border: 1px solid white;
 }
 
 
@@ -102,4 +103,17 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+.rounded-pill {
+    width:40px;
+}
+
+.welcomeText {
+    margin-top: 10rem;
+}
+
+.goharikPicture {
+    width: auto;
+    height: 40%;
 }
