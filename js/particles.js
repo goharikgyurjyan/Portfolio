@@ -1,3 +1,8 @@
+/*
+Code original de Johan (https://codepen.io/bob6664569/pen/rOzmve)
+Licence : MIT
+*/
+
 particlesJS("particles-js", {
     particles: {
         number: {
