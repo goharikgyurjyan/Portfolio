@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const planets = document.querySelectorAll('.float');
     planets.forEach(planet => {
-        const randomTop = Math.random() * 80 + 10;
+        const randomTop = Math.random() * 80;
         const randomLeft = Math.random() * 80;
         planet.style.position = 'absolute';
-        planet.style.top = `${randomTop}%`;
+        planet.style.top = `${randomTop+10}%`;
         planet.style.left = `${randomLeft}%`;
     });
 });

@@ -5,11 +5,16 @@
     color: white;
 }
 
-.neon-contour {
-    border: 2px solid white;
+.bottom-glow {
+    border-bottom: 2px solid white;
     padding: 20px;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
-    border-radius: 10px;
+}
+
+.top-glow {
+    border-top: 2px solid white;
+    padding: 20px;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
 }
 
 .text-justify {
@@ -116,4 +121,8 @@ body {
 .goharikPicture {
     width: auto;
     height: 40%;
+}
+
+html {
+    scroll-padding-top: 100px;
 }

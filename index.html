@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="bg-dark-white">
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top neon-contour">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top bottom-glow">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
             <img src="assets/img/Gw.png" alt="Goharik Logo" class="rounded-pill">
@@ -56,14 +56,14 @@
     <a href="#formations" class="float">
         <img src="assets/img/uranus.png" alt="uranus" class="planet" data-title="Mes formations">
     </a>
-    <div class="text-center welcomeText">
+    <div class="text-center welcomeText position-absolute start-50 translate-middle-x">
         <h1>Goharik GYURJYAN</h1>
         <h4>Étudiante en BUT Informatique</h4>
     </div>
 </div>
 <h1 class="mb-3 text-center" id="about">À propos de moi</h1>
-<div class="d-flex container-fluid flex-row mt-5">
-    <div class="w-50 text-center m-5 padding-bottom">
+<div class="row gy-4 mx-3">
+    <div class="col-12 col-lg-6 text-center">
         <h2 class="mb-3">Qui-suis je ?</h2>
         <p class="text-justify">
             Je m'appelle Goharik GYURJYAN, originaire d'Arménie. Baignée dans un mélange de cultures depuis mon enfance, je suis toujours en quête de nouvelles aventures, que ce soit dans ma vie personnelle ou dans le domaine de l'informatique.
@@ -71,13 +71,12 @@
             univers très vaste dans lequel il y a également beaucoup de choses à découvrir et expérimenter. <br>
             Actuellement en deuxième année de BUT Informatique, j'ai pu réaliser de nombreux projets en équipe, disponibles sur ma page GitHub.
             J'ai pu au cours de ces deux dernières années développer un bagage de compétences, allant du développement web, à la gestion de base de données, en passant par la gestion de projet.
-
         </p>
-        <img src="assets/img/fly.png" alt="Chemin">
+        <img src="assets/img/fly.png" alt="Chemin" class="img-fluid">
 
     </div>
-    <div class="w-50 text-center m-5 padding-bottom">
-        <img src="assets/img/moi.png" class="justify-content-center goharikPicture" alt="Goharik">
+    <div class="col-12 col-lg-6 text-center">
+        <img src="assets/img/moi.png" class="justify-content-center goharikPicture img-fluid" alt="Goharik">
         <h2 class="mb-3">Et après ?</h2>
         <p class="text-justify">
             À l'issue de mes études, je souhaiterais approfondir mes compétences dans des domaines qui me passionnent, comme la gestion de bases de données et la data science.
@@ -88,8 +87,9 @@
     </div>
 </div>
 <h1 class="mb-3 text-center" id="formations">Mes Formations</h1>
+
 <h1 class="mb-3 text-center" id="projets">Mes Projets</h1>
-<div class="m-5 text-center">
+<div class="col-12 text-center mb-5">
     <h2 class="mb-3 mt-5" id="CV">Mon CV</h2>
     <a href="assets/pdf/CV_GOHARIK.pdf" download class="btn btn-warning d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download me-2" viewBox="0 0 16 16">
@@ -103,7 +103,7 @@
 <script src="js/listeners.js"></script>
 </body>
 
-<footer class="neon-contour bg-dark">
-    <a href="https://www.flaticon.com/free-icons/planet" title="planet icons" class="text-white">Planet icons created by Freepik - Flaticon</a>
+<footer class="top-glow bg-dark py-3">
+    <a href="https://www.flaticon.com/free-icons/planet" title="planet icons" class="text-white">Planet icons créés par Freepik - Flaticon</a>
 </footer>
 </html>
