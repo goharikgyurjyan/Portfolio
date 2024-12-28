@@ -59,6 +59,21 @@ body {
     animation: fadeOut 2s linear forwards;
 }
 
+.tooltip-custom {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -120%);
+}
+
 
 @keyframes fadeOut {
     0% {

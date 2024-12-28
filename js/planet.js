@@ -23,3 +23,26 @@ document.addEventListener('mousemove', (e) => {
         star.remove();
     }, 2000);
 });
+
+document.querySelectorAll('.planet').forEach(container => {
+    const tooltipText = container.getAttribute('data-title');
+
+    // Crée un élément d'info-bulle
+    const tooltip = document.createElement('div');
+    tooltip.className = 'tooltip-custom';
+    tooltip.innerText = tooltipText;
+    document.body.appendChild(tooltip);
+
+    // Affiche l'info-bulle au survol
+    container.addEventListener('mouseenter', (e) => {
+        const rect = container.getBoundingClientRect();
+        tooltip.style.left = `${rect.left + rect.width / 2}px`;
+        tooltip.style.top = `${rect.top}px`;
+        tooltip.style.display = 'block';
+    });
+
+    // Cache l'info-bulle à la sortie
+    container.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+});
