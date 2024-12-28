@@ -40,3 +40,51 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: radial-gradient(white, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fadeOut 2s linear forwards;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
