@@ -14,8 +14,8 @@ document.addEventListener('mousemove', (e) => {
     const star = document.createElement('div');
     star.classList.add('star');
 
-    star.style.top = `${e.clientY}px`;
-    star.style.left = `${e.clientX}px`;
+    star.style.top = `${e.pageY}px`;
+    star.style.left = `${e.pageX}px`;
 
     document.body.appendChild(star);
 
@@ -23,6 +23,7 @@ document.addEventListener('mousemove', (e) => {
         star.remove();
     }, 2000);
 });
+
 
 document.querySelectorAll('.planet').forEach(container => {
     const tooltipText = container.getAttribute('data-title');
