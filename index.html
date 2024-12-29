@@ -25,10 +25,12 @@
                     <a class="nav-link" href="html/contact.html">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Projets</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="html/projets/projet1.html">Projet1</a></li>
-                        <li><a class="dropdown-item" href="html/projets/projet2.html">Projet2</a></li>
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projets</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="html/projets/projetweb.html">Projet Web</a></li>
+                        <li><a class="dropdown-item" href="html/projets/projetjava.html">Projet Java</a></li>
+                        <li><a class="dropdown-item" href="html/projets/projetmulti.html">Projet Multi</a></li>
+                        <li><a class="dropdown-item" href="html/projets/projetcsharp.html">Projet C#</a></li>
                     </ul>
                 </li>
             </ul>
@@ -58,12 +60,12 @@
     <a href="#formations" class="float">
         <img src="assets/img/uranus.png" alt="uranus" class="planet" data-title="Mes formations">
     </a>
-    <div class="text-center welcomeText position-absolute start-50 translate-middle-x">
+    <div class="text-center position-absolute translate-middle-x translate-middle-y">
         <h1>Goharik GYURJYAN</h1>
         <h4>Étudiante en BUT Informatique</h4>
     </div>
 </div>
-<h1 class="mb-3 text-center" id="about">À propos de moi</h1>
+<h1 class="text-center mb-3" id="about">À propos de moi</h1>
 <div class="row gy-4 mx-3 mt-3">
     <div class="col-12 col-lg-6 text-center">
         <h2 class="mb-3">Qui-suis je ?</h2>
@@ -74,8 +76,7 @@
             Actuellement en deuxième année de BUT Informatique, j'ai pu réaliser de nombreux projets en équipe, disponibles sur ma page GitHub.
             J'ai pu au cours de ces deux dernières années développer un bagage de compétences, allant du développement web, à la gestion de base de données, en passant par la gestion de projet.
         </p>
-        <img src="assets/img/fly.png" alt="Chemin" class="img-fluid">
-
+        <img src="assets/img/flying.png" alt="Chemin" class="img-fluid justify-content-center goharikPicture">
     </div>
     <div class="col-12 col-lg-6 text-center">
         <img src="assets/img/moi.png" class="justify-content-center goharikPicture img-fluid" alt="Goharik">
@@ -113,6 +114,71 @@
 </div>
 
 <h1 class="mb-3 text-center" id="projets">Mes Projets</h1>
+<div class="container my-5">
+    <div class="row justify-content-center gy-4">
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Projet Web</p>
+                        <p>Site Web Marchand</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Compétences</p>
+                        <p>PHP, SQL, CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Projet Java</p>
+                        <p>Jeu de société Train</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Compétences</p>
+                        <p>Java, JavaFX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Projet Multi</p>
+                        <p>Capture The Flag</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Compétences</p>
+                        <p>Gestion de Projet, JavaScript, CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Projet C#</p>
+                        <p>Memory</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Compétences</p>
+                        <p>Unity, C#</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="col-12 text-center mb-5 align-items-center">
     <h2 class="mb-3 mt-5" id="CV">Mon CV</h2>
     <a href="assets/pdf/CV_GOHARIK.pdf" download class="btn btn-warning d-flex align-items-center w-25 justify-content-center mx-auto">
@@ -125,12 +191,15 @@
 </div>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/planets.js"></script>
 <script src="js/listeners.js"></script>
 <script src="js/particles.js"></script>
 </body>
 
-<footer class="top-glow bg-dark py-3">
-    <a href="https://www.flaticon.com/free-icons/planet" title="planet icons" class="text-white">Planet icons créés par Freepik - Flaticon</a>
-    <p>Effet visuel basé sur un projet de <a href="https://codepen.io/bob6664569/pen/rOzmve" target="_blank" class="text-white">Johan</a>, sous licence MIT.</p>
+<footer class="top-glow bg-dark">
+    <p class="text-center mb-0">© 2024 Goharik GYURJYAN</p>
+    <p class="text-center mb-0">
+        <a class="small fst-italic text-white text-decoration-none" href="html/credits.html">Autres crédits</a>
+    </p>
 </footer>
 </html>
