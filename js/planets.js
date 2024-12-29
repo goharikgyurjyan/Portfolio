@@ -17,10 +17,14 @@ document.querySelectorAll('.planet').forEach(container => {
     tooltip.innerText = tooltipText;
     document.body.appendChild(tooltip);
 
-    container.addEventListener('mouseenter', (e) => {
+    container.addEventListener('mouseenter', () => {
         const rect = container.getBoundingClientRect();
-        tooltip.style.left = `${rect.left + rect.width / 2}px`; // Centré horizontalement
-        tooltip.style.top = `${rect.bottom}px`; // Place sous la planète
+
+        const scrollTop = window.scrollY;
+        const scrollLeft = window.scrollX;
+
+        tooltip.style.left = `${rect.left + rect.width / 2 + scrollLeft}px`;
+        tooltip.style.top = `${rect.bottom + scrollTop}px`;
         tooltip.style.display = 'block';
     });
 
