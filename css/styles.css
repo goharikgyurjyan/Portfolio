@@ -113,8 +113,9 @@ body {
     width:40px;
 }
 .goharikPicture {
+    max-height: 400px; /* ou la taille que vous souhaitez */
     width: auto;
-    height: 40%;
+    object-fit: contain;
 }
 
 html {
