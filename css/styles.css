@@ -25,17 +25,12 @@
     overflow: hidden;
 }
 
-.planet {
-    position: absolute;
-    transition: transform 0.3s ease-in-out;
-}
-
-.planet:hover {
-    transform: scale(1.2);
-}
-
 .padding-bottom {
     padding-bottom: 100px;
+}
+
+.rounded-pill {
+    width:40px;
 }
 
 body {
@@ -70,11 +65,6 @@ body {
     animation: float 6s ease-in-out infinite -2s;
 }
 
-
-.rotate {
-    animation: rotate 10s linear infinite;
-}
-
 .star {
     position: absolute;
     width: 3px;
@@ -83,22 +73,6 @@ body {
     border-radius: 50%;
     pointer-events: none;
     animation: fadeOut 2s linear forwards;
-}
-
-.tooltip-custom {
-    position: absolute;
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 12px;
-    white-space: nowrap;
-    display: none;
-    pointer-events: none;
-    z-index: 1000;
-    transform: translate(-50%, 10px);
-    border: 1px solid white;
 }
 
 
@@ -122,234 +96,12 @@ body {
     }
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.rounded-pill {
-    width:40px;
-}
-.goharikPicture {
-    max-height: 400px; /* ou la taille que vous souhaitez */
-    width: auto;
-    object-fit: contain;
-}
-
 html {
     scroll-padding-top: 100px;
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.timeline {
-    position: relative;
-    padding: 100px 0;
-    margin-top: 30px;
-}
-
-.timeline-line {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    right: 10%;
-    height: 2px;
-    background: #f2aa00;
-    transform: translateY(-50%);
-}
-
-.timeline-point {
-    width: 16px;
-    height: 16px;
-    background: #f2aa00;
-    border: 2px solid #000000;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-
-.timeline-content {
-    background: #191100;
-    border: 2px solid #f2aa00;
-    border-radius: 8px;
-    padding: 15px;
-    max-width: 250px;
-    transition: all 0.3s ease;
-}
-
-.timeline-content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(242, 170, 0, 0.3);
-}
-
-.timeline-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: antiquewhite;
-}
-
-.timeline-content-wrapper {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.event-below {
-    transform: translateY(120px);
-}
-
-.event-above {
-    transform: translateY(-120px);
-}
-
-.event-below:hover {
-    transform: translateY(115px);
-}
-
-.event-above:hover {
-    transform: translateY(-125px);
-}
-
-.rocket {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #ffffff;
-    animation: fly 30s ease-in-out infinite;
-    z-index: 3;
-}
-
-@keyframes fly {
-    0% {
-        left: 10%;
-        transform: translate(-50%, -50%) rotate(45deg); /* Orientation initiale */
-    }
-    50% {
-        left: 90%;
-        transform: translate(-50%, -50%) rotate(225deg); /* Arrivée à droite */
-    }
-    100% {
-        left: 10%;
-        transform: translate(-50%, -50%) rotate(45deg); /* Retour au point de départ */
-    }
-}
-
-/* From Uiverse.io by joe-watson-sbf */
-.flip-card {
-    background-color: transparent;
-    width: 190px;
-    height: 254px;
-    perspective: 1000px;
-}
-
-.title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid #f2aa00;
-    border-radius: 1rem;
-}
-
-.flip-card-front {
-    background: linear-gradient(120deg,
-    #191100 60%,
-    #2a1900 88%,
-    #382200 40%,
-    rgba(25, 17, 0, 0.8) 48%
-    );
-    color: #f2aa00;
-}
-
-.flip-card-back {
-    background: linear-gradient(120deg,
-    #f2aa00 30%,
-    #cc9000 88%,
-    #191100 40%,
-    #b37e00 78%
-    );
-    color: #191100;
-    transform: rotateY(180deg);
 }
 
 .spacing {
     margin-top: 8rem;
     margin-bottom: 8rem; !important;
-}
-
-.coin {
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
-}
-
-.coin-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
-
-.coin-front, .coin-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.coin-front {
-    border: 2px solid white;
-}
-.coin-back {
-    transform: rotateY(180deg);
-    border: 2px solid black;
-}
-
-.coin-front img, .coin-back img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.coin:hover .coin-inner {
-    transform: rotateY(180deg);
 }
 
