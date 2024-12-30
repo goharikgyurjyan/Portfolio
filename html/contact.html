@@ -36,18 +36,29 @@
     </div>
 </nav>
 <h1 class="text-center mt-4">Contact</h1>
-<div class="container mt-3 flex-grow-1">
+<div class="container mt-3 mb-5">
     <div class="row">
-        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
-            <div>
-                <h2>Informations</h2>
-                <div class="moving">
-
-
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+            <div class="d-flex align-items-center gap-3">
+                <div class="coin">
+                    <div class="coin-inner">
+                        <div class="coin-front">
+                            <img src="../assets/img/avatar.png" alt="Face 1">
+                        </div>
+                        <div class="coin-back">
+                            <img src="../assets/img/goharik.png" alt="Face 2">
+                        </div>
+                    </div>
                 </div>
+                <h1>Goharik GYURJYAN</h1>
+            </div>
+
+            <div class="moving">
+
             </div>
         </div>
         <div class="col-12 col-lg-6">
+            <p id="form-status"></p>
             <form id="form-contact" action="https://formspree.io/f/mjkkozen" method="POST">
                 <div class="mb-3">
                     <label for="nom" class="form-label">Nom</label>
@@ -73,7 +84,6 @@
                     <button type="submit" class="btn btn-warning w-25 mx-auto">Envoyer</button>
                 </div>
             </form>
-            <p id="form-status"></p>
         </div>
     </div>
 </div>
