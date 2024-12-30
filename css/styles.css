@@ -285,3 +285,8 @@ html {
     color: #191100;
     transform: rotateY(180deg);
 }
+
+.spacing {
+    margin-top: 8rem;
+    margin-bottom: 8rem; !important;
+}
