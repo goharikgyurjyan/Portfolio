@@ -48,6 +48,28 @@ body {
 .float {
     animation: float 6s ease-in-out infinite;
 }
+.float:nth-child(2) {
+    animation: float 6s ease-in-out infinite -4s;
+}
+.float:nth-child(3) {
+    animation: float 6s ease-in-out infinite -3.2s;
+}
+.float:nth-child(4) {
+    animation: float 6s ease-in-out infinite -2.6s;
+}
+.float:nth-child(5) {
+    animation: float 6s ease-in-out infinite -1.7s;
+}
+.float:nth-child(6) {
+    animation: float 6s ease-in-out infinite -3.5s;
+}
+.float:nth-child(7) {
+    animation: float 6s ease-in-out infinite -1.4s;
+}
+.float:nth-child(8) {
+    animation: float 6s ease-in-out infinite -2s;
+}
+
 
 .rotate {
     animation: rotate 10s linear infinite;
