@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Projet C#</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../assets/img/Gw.png">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/styles.css">
@@ -41,14 +42,56 @@
 </nav>
 <div class="container mt-4 flex-grow-1">
     <h1 class="text-center mb-5">Projet C# - Memory</h1>
-    <div class="container d-flex gap-5">
-        <img alt="train" src="../../assets/img/memory.png" class="img-fluid" >
-        <p class="text-justify">&emsp;Le projet Memory est un projet issu du lycée lors de mes cours de NSI (Numérique et Sciences Informatique).
-        Nous avions eu près d'un semestre entier pour nous consacrer à ce projet, avec seulement quelques heures allouées en classe. Il n'y avait pas vraiment de thème donné. <br>
-        Comme j'ai toujours voulu créer mon propre jeu, j'ai donc décidé de partir sur un jeu de plateforme assez simple.
-        Memory a été mon tout premier vrai projet de programmation, c'est pour ça que j'ai opté pour Unity qui m'avait l'air d'être assez simple pour la prise en main.
-        Pour ce qui est de l'organisation, il n'y en avait pas vraiment, j'essayais de travailler dessus quand je pouvais, en regardant des tutoriels sur Youtube car je n'avais aucune base ni sur Unity ni en C#.
-        </p>
+    <div class="row g-4">
+        <div class="col-12 col-lg-4">
+            <img alt="train" src="../../assets/img/memory.png" class="img-fluid" >
+        </div>
+        <div class="col-12 col-lg-8">
+            <p class="text-justify tab">Le projet Memory est un projet issu du lycée lors de mes cours de NSI (Numérique et Sciences Informatique).
+                Nous avions eu près d'un semestre entier pour nous consacrer à ce projet, avec seulement quelques heures allouées en classe. Il n'y avait pas vraiment de thème donné. <br>
+                Comme j'ai toujours voulu créer mon propre jeu, j'ai donc décidé de partir sur un jeu de plateforme assez simple.
+                Memory a été mon tout premier vrai projet de programmation, c'est pour ça que j'ai opté pour Unity qui m'avait l'air d'être assez simple pour la prise en main.
+                Pour ce qui est de l'organisation, il n'y en avait pas vraiment, j'essayais de travailler dessus quand je pouvais, en regardant des tutoriels sur Youtube car je n'avais aucune base ni sur Unity ni en C#.
+            </p>
+            <p class="text-justify tab">Ce n'est pas le projet le mieux organisé ni le mieux réalisé, mais c'est un projet dont je reste assez fière. Tout d'abord parce que j'ai réussi à faire un jeu par moi-même et j'ai pu voir comment les jeux (sous Unity du moins) étaient construits.
+                J'ai également innové mon idée initiale de jeu de plateforme en ajoutant une fonctionnalité particulière : un quiz sur les capitales du monde.
+                La fonctionnalité n'a pas été implémentée de la meilleure des manières, mais lorsque le joueur avance, dans un temps plus ou moins régulier, un écran s'affiche en demandant la capitale d'un pays, si le joueur répond correctement, il peut reprendre sa traversée, sinon il perd une vie.</p>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <h4 class="mb-3 text-center">Compétences sollicitées</h4>
+    <div class="row">
+        <div class="col-12">
+            <ul>
+                <li><i class="bi bi-person-arms-up"></i> Autonomie : Aucune aide de la part du professeur, car il ne connaissait pas vraiment Unity, j'ai dû me renseigner en totale autonomie.</li>
+                <li><i class="bi bi-unity"></i> Unity : Moteur de jeu, création des différentes scènes, mouvement des personnages</li>
+                <li><i class="bi bi-file-earmark-code-fill"></i> C# : Scripts de déplacement de personnages, génération du monde infini, gestion des questions sur les capitales etc</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <h4 class="mb-3 text-center">Captures d'écran</h4>
+    <div class="row g-3">
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+            <a href="../../assets/img/memoryMain.png" target="_blank">
+                <img src="../../assets/img/memoryMain.png" alt="screen écran d'accueil memory" class="img-fluid img-grid"
+                     data-bs-toggle="tooltip" title="Écran d'accueil de Memory">
+            </a>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+            <a href="../../assets/img/memoryGameplay.png" target="_blank">
+                <img src="../../assets/img/memoryGameplay.png" alt="screen gameplay memory" class="img-fluid img-grid"
+                     data-bs-toggle="tooltip" title="Gameplay de Memory">
+            </a>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+            <a href="../../assets/img/memoryQuiz.png" target="_blank">
+                <img src="../../assets/img/memoryQuiz.png" alt="screen quiz memory" class="img-fluid img-grid"
+                     data-bs-toggle="tooltip" title="Affichage du Quiz sur des capitales">
+            </a>
+        </div>
     </div>
 </div>
 <div class="container d-flex align-items-center justify-content-center gap-5 mb-5 mt-5">
