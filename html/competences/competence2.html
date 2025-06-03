@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projet C#</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/Gw.png">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projets.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top bottom-glow">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../../assets/img/Gw.png" alt="Goharik Logo" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projets</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../projets/projetweb.html">Projet Web</a></li>
+                        <li><a class="dropdown-item" href="../projets/projetjava.html">Projet Java</a></li>
+                        <li><a class="dropdown-item" href="../projets/projetmulti.html">Projet Multi</a></li>
+                        <li><a class="dropdown-item" href="../projets/projetcsharp.html">Projet C#</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="flex-grow-1 flex-column d-flex pt-4 text-white bg-black">
+    <div class="container py-5">
+        <h1 class="text-center mb-5 display-5 fw-bold">Compétence 2 : Optimiser des applications</h1>
+        <p class="lead text-center mb-5">Cette compétence consiste à optimiser les performances des applications, en combinant techniques algorithmiques et contraintes matérielles, tout en intégrant sécurité, impact environnemental et robustesse. L’objectif est de concevoir des solutions efficaces, durables et fiables.</p>
+
+        <section id="ac-list">
+            <article id="ac1" class="ac-card">
+                <h3>AC 1 : Choisir des structures de données complexes adaptées au problème</h3>
+                <p>J’ai analysé et remplacé des structures naïves par des collections optimisées, réduisant considérablement la complexité et améliorant la rapidité d’exécution.</p>
+                <div>
+                    <a href="projets/projetalgo.html" target="_blank" class="btn project-link btn-sm">Projet Algo</a>
+                    <a href="projets/projetweb.html" target="_blank" class="btn project-link btn-sm">Projet GetFood</a>
+                </div>
+            </article>
+
+            <article id="ac2" class="ac-card">
+                <h3>AC 2 : Utiliser des techniques algorithmiques adaptées pour des problèmes complexes</h3>
+                <p>J’ai mis en œuvre des algorithmes avancés comme MiniMax dans un projet Java, améliorant la prise de décision automatisée.</p>
+                <div>
+                    <a href="projets/projetjava.html" target="_blank" class="btn project-link btn-sm">Projet Java MiniMax</a>
+                </div>
+            </article>
+
+            <article id="ac3" class="ac-card">
+                <h3>AC 3 : Comprendre les enjeux et moyens de sécurisation des données et du code</h3>
+                <p>En suivant les bonnes pratiques, j’ai renforcé la sécurité des applications avec un contrôle d’accès rigoureux et une gestion fine des permissions.</p>
+                <div>
+                    <a href="projets/projetsecurite.html" target="_blank" class="btn project-link btn-sm">Projet Sécurité</a>
+                </div>
+            </article>
+
+            <article id="ac4" class="ac-card">
+                <h3>AC 4 : Évaluer l’impact environnemental et sociétal des solutions proposées</h3>
+                <p>J’ai optimisé les ressources des applications en réduisant la consommation mémoire et en adoptant des pratiques de développement durables.</p>
+                <div>
+                    <a href="projets/projetdocker.html" target="_blank" class="btn project-link btn-sm">Docker Slimming</a>
+                </div>
+            </article>
+        </section>
+    </div>
+</main>
+
+<footer class="top-glow bg-dark">
+    <p class="text-center mb-0">
+        <a href="../contact.html" class="text-white text-decoration-none">© 2025 Goharik GYURJYAN</a>
+    </p>
+    <p class="text-center mb-0">
+        <a class="small fst-italic text-white text-decoration-none" href="../credits.html">Autres crédits</a>
+    </p>
+</footer>
+<script src="../../js/bootstrap.bundle.js"></script>
+<script src="../../js/listeners.js"></script>
+<script src="../../js/projects.js"></script>
+</body>
+</html>
