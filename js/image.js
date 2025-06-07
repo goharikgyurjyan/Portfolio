@@ -31,6 +31,7 @@ document.body.appendChild(overlay);
 const images = document.querySelectorAll('img');
 
 images.forEach(img => {
+    img.style.cursor = "pointer";
     img.addEventListener('click', () => {
         fullImage.src = img.src;
         overlay.style.display = 'flex';
